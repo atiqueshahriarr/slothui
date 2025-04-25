@@ -10,6 +10,10 @@
     width: 80%;
     max-width: 1216px;
 }
+.container-small {
+    margin: 0 auto;
+    width: 800px;
+}
 
 .section-title-container {
     max-width: 800px;
@@ -146,8 +150,9 @@
     box-shadow: 0px 22px 48px hsl(217, 33%, 17%, 10%), 0px 88px 88px hsl(217, 33%, 17%, 9%), 0px 198px 119px hsl(217, 33%, 17%, 5%), 0px 352px 141px hsl(217, 33%, 17%, 1%), 0px 550px 154px hsl(217, 33%, 17%, 0%);
 }
 
-.company-section {
+.backgournd-color-container {
     background-color: #eff5fa;
+    padding: 64px 0;
 }
 
 .company-container {
@@ -156,7 +161,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 32px 64px;
-    padding: 64px 0;
 }
 
 .company-container img {
@@ -193,4 +197,41 @@
 }
 .feature-container .feature-item p {
     color: #475569;
+}
+
+.work-container .section-title-container img {
+    padding: 12px;
+    background-color: #eef2ff;
+    width: 28px;
+    border-radius: 1234px;
+}
+
+.work-container .work-cards {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.work-container .work-cards .work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+.work-container .work-cards .work-card-border{
+    border-left: 1px solid #cbd5e1;
+    border-right: 1px solid #cbd5e1;
+}
+
+.work-container .work-cards .work-card h1 {
+    color: #4f46e5;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.work-container .work-cards .work-card p {
+    color: #475569;
+    font-weight: 700;
+    font-size: 18px;
 }
