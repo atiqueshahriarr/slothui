@@ -388,3 +388,52 @@
 .location-container .location-container-card p {
     color: #1e293b;
 }
+
+.faq-container-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.faq-container-list {
+    padding: 16px;
+    border-bottom: 1px solid #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.faq-container-list img {
+    width: 24px;
+}
+
+.faq-container-list h5 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #334155;
+    flex-grow: 1;
+}
+
+.faq-container-list p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+}
+.faq-container-list-dropdown .faq-container-list {
+    border-bottom: none;
+}
+
+.faq-container-list-dropdown .faq-container-list img:nth-child(3) {
+    rotate: 180deg;
+}
+
+.faq-container-list-dropdown {
+    border-bottom: 1px solid #cbd5e1;
+}
+.faq-container-list-dropdown p {
+    padding-left: 18px;
+    padding-bottom: 12px;
+    color: #475569;
+    font-size: 14px;
+}
