@@ -251,9 +251,8 @@
     gap: 24px;
 }
 
-.procrastinators-container .procrastinators-contents-left{
+.procrastinators-container .procrastinators-contents-left {
     padding: 60px 0;
-    
 }
 
 .procrastinators-container .procrastinators-contents-card {
@@ -281,11 +280,10 @@
     color: #475569;
 }
 
-.procrastinators-container  .procrastinators-contents-right {
+.procrastinators-container .procrastinators-contents-right {
     background-image: linear-gradient(to bottom, white 0%, white 30%, #4e46e58a 100%);
     position: relative;
     overflow: hidden;
-
 }
 .procrastinators-contents-right div {
     display: flex;
@@ -297,8 +295,7 @@
 }
 
 .procrastinators-contents-right img {
-    width: 364px; 
-    
+    width: 364px;
 }
 .procrastinators-contents-right img:first-child {
     margin-top: 200px;
@@ -306,4 +303,54 @@
 
 .procrastinators-contents-right img:nth-child(2) {
     margin-bottom: 200px;
+}
+
+.testimonial-container .testimonial-container-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 24px;
+}
+
+.testimonial-container .testimonial-container-card .testimonial-rating img {
+    width: 24px;
+}
+
+.testimonial-container .avatar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.testimonial-container .avatar img {
+    height: 48px;
+    width: 48px;
+    border-radius: 1234px;
+}
+
+.testimonial-container .avatar h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.testimonial-container .testimonial-container-card p {
+    font-size: 18px;
+    color: #475569;
+}
+
+.testimonial-container .avatar p {
+    font-size: 16px;
+    color: #475569;
+}
+
+.testimonial-container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding-top: 64px;
 }
