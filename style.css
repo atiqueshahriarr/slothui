@@ -145,3 +145,16 @@
     left: 770px;
     box-shadow: 0px 22px 48px hsl(217, 33%, 17%, 10%), 0px 88px 88px hsl(217, 33%, 17%, 9%), 0px 198px 119px hsl(217, 33%, 17%, 5%), 0px 352px 141px hsl(217, 33%, 17%, 1%), 0px 550px 154px hsl(217, 33%, 17%, 0%);
 }
+
+.company-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px 64px;
+    padding: 64px 0;
+}
+
+.company-container img {
+    height: 96px;
+}
