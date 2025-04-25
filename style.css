@@ -11,16 +11,38 @@
     max-width: 1216px;
 }
 
-.section-top-title{
-
+.section-title-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
 }
 
-.section-title{
-
+.section-top-title {
+    color: #4f46e5;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #eef2ff;
+    width: fit-content;
+    border-radius: 1234px;
 }
 
-.section-subtitle{
-    
+.section-title {
+    color: #1e293b;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 68px;
+}
+
+.section-subtitle {
+    color: #475569;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
 }
 
 .header-container {
@@ -77,4 +99,49 @@
     border-radius: 1234px;
     padding: 12px 20px;
     font-weight: 700;
+}
+
+.banner-container {
+    background-image: linear-gradient(to bottom, white 0%, white 30%, #4e46e58a 100%);
+
+    padding: 96px 0px;
+}
+
+.banner-container .download-buttons {
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.banner-container .download-buttons img:first-child {
+    width: 132px;
+}
+
+.banner-container .download-buttons > img:nth-child(2) {
+    width: 148.5px;
+}
+
+.banner-container .banner-images {
+    width: 1008px;
+    margin: 0 auto;
+    position: relative;
+    padding: 64px 0 0 40px;
+}
+
+.banner-container .banner-images img:first-child {
+    width: 800px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f052;
+    box-shadow: 0px 22px 48px 0px hsl(217, 33%, 17%, 10%), 0px 88px 88px 0px hsl(217, 33%, 17%, 9%), 0px 198px 119px 0px hsl(217, 33%, 17%, 5%), 0px 352px 141px 0px hsl(217, 33%, 17%, 1%), 0px 550px 154px 0px hsl(217, 33%, 17%, 0%), 0px 0px 0px 8px hsla(0, 0%, 100%, 25%);
+}
+
+.banner-container .banner-images img:nth-child(2) {
+    position: absolute;
+    width: 230px;
+    border-radius: 38px;
+    top: 190px;
+    left: 770px;
+    box-shadow: 0px 22px 48px hsl(217, 33%, 17%, 10%), 0px 88px 88px hsl(217, 33%, 17%, 9%), 0px 198px 119px hsl(217, 33%, 17%, 5%), 0px 352px 141px hsl(217, 33%, 17%, 1%), 0px 550px 154px hsl(217, 33%, 17%, 0%);
 }
