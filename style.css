@@ -6,12 +6,14 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1216px;
+    padding: 0 20px;
 }
 
 .container-small {
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .container-backgournd-color {
@@ -37,12 +39,13 @@
 
 .section-title-container {
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 24px;
+    padding: 0 20px;
 }
 
 .section-left-title-container {
@@ -125,6 +128,10 @@
     padding: 96px 0px;
 }
 
+.banner-container .section-title {
+    font-size: 60px;
+}
+
 .banner-container .download-buttons {
     padding-top: 48px;
     display: flex;
@@ -145,10 +152,15 @@
     margin: 0 auto;
     position: relative;
     padding: 64px 0 56px 0;
+    width: 100%;
+    max-width: 1008px;
 }
 
 .banner-container .banner-images img:first-child {
-    width: 830px;
+    width: 80%;
+    margin-left: 20px;
+    height: auto;
+    display: block;
     border-radius: 16px;
     border: 1px solid #e2e8f052;
     box-shadow: 0px 22px 48px 0px hsl(217, 33%, 17%, 10%), 0px 88px 88px 0px hsl(217, 33%, 17%, 9%), 0px 198px 119px 0px hsl(217, 33%, 17%, 5%), 0px 352px 141px 0px hsl(217, 33%, 17%, 1%), 0px 550px 154px 0px hsl(217, 33%, 17%, 0%), 0px 0px 0px 8px hsla(0, 0%, 100%, 25%);
@@ -156,11 +168,10 @@
 
 .banner-container .banner-images img:nth-child(2) {
     position: absolute;
-    width: 230px;
-    border-radius: 38px;
+    width: 23%;
+    height: auto;
     top: 210px;
-    left: 770px;
-    box-shadow: 0px 22px 48px hsl(217, 33%, 17%, 10%), 0px 88px 88px hsl(217, 33%, 17%, 9%), 0px 198px 119px hsl(217, 33%, 17%, 5%), 0px 352px 141px hsl(217, 33%, 17%, 1%), 0px 550px 154px hsl(217, 33%, 17%, 0%);
+    left: 75%;
 }
 
 .company-container {
@@ -172,7 +183,7 @@
 }
 
 .company-container img {
-    height: 96px;
+    max-width: 144px;
 }
 
 .feature-container {
@@ -256,17 +267,16 @@
 
 .procrastinators-contents {
     margin-top: 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 32px;
 }
 
 .procrastinators-contents-left {
     padding: 64px 0;
+    width: 100%;
 }
 
 .procrastinators-contents-list {
-    max-width: 468px;
     padding: 24px 0 24px 20px;
     border-left: 4px solid #e0e7ff;
 }
@@ -293,6 +303,7 @@
 .procrastinators-contents-right {
     background-image: linear-gradient(to bottom, #cdc8e738, #4e46e544);
     border-radius: 32px;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -306,7 +317,7 @@
 }
 
 .procrastinators-contents-right img {
-    width: 364px;
+    max-width: 364px;
 }
 .procrastinators-contents-right img:first-child {
     margin-top: 200px;
@@ -479,12 +490,12 @@
     color: white;
 }
 
-.download-container-images img {
-    width: 354px;
-}
-
 .download-container-images {
     position: relative;
+}
+
+.download-container-images img {
+    max-width: 354px;
 }
 
 .download-container-images img:first-child {
@@ -548,19 +559,164 @@
     color: #94a3b8;
 }
 
-/* @media (max-width: 767px) {
-
-    .footer {
-        flex-direction: column;
-        align-items: flex-start;
+@media (max-width: 767px) {
+    .section-title-container {
         gap: 20px;
     }
 
-    .footer-top-list li:first-child {
+    .section-subtitle {
         font-size: 16px;
     }
-}
 
+    .section-title {
+        font-size: 30px;
+    }
+
+    .banner-container .section-title {
+        font-size: 36px;
+    }
+
+    .banner-container .banner-images img:first-child {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .banner-container .banner-images img:nth-child(2) {
+        top: 210px;
+        left: 68%;
+    }
+
+    .company-container {
+        gap: 32px;
+    }
+
+    .company-container img {
+        width: 74px;
+    }
+
+    .feature-items {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 32px;
+    }
+
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .feature-container .feature-item img {
+        width: 64px;
+        padding-bottom: 12px;
+    }
+
+    .feature-item h4 {
+        font-size: 18px;
+    }
+
+    .work-container .section-title-container img {
+        width: 24px;
+    }
+
+    .work-cards {
+        grid-template-columns: auto;
+        gap: 32px;
+    }
+
+    .work-card {
+        gap: 16px;
+    }
+
+    .work-card-border {
+        border-left: none;
+        border-right: none;
+        padding: 32px 0;
+        border-top: 1px solid #cbd5e1;
+        border-bottom: 1px solid #cbd5e1;
+    }
+
+    .procrastinators-contents {
+        flex-direction: column;
+    }
+
+    .procrastinators-contents-left {
+        padding: 0px 0;
+    }
+
+    .procrastinators-contents-right {
+        height: 500px;
+    }
+
+    .procrastinators-contents-right div {
+        position: static;
+    }
+    .procrastinators-contents-right img {
+        width: 50%;
+    }
+
+    .testimonial-container-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .testimonial-container-cards .testimonial-container-card:nth-child(n + 5) {
+        display: none;
+    }
+
+    .location-container-cards {
+        grid-template-columns: auto;
+        gap: 16px;
+    }
+
+    .location-container-card {
+        padding: 20px;
+    }
+
+    .download-container {
+        grid-template-columns: auto;
+        gap: 48px;
+        padding: 64px 20px;
+    }
+
+    .download-container .buttons {
+        flex-direction: column;
+    }
+
+    .download-container-images img {
+        width: 47%;
+    }
+
+    .download-container-images {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .download-container-images img:first-child {
+        position: static;
+        padding-top: 30%;
+    }
+
+    .download-container-images img:nth-child(2) {
+        position: static;
+        padding-bottom: 30%;
+    }
+
+    .footer-top-lists {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+/* 
 @media (min-width: 768px) and (max-width: 1023px) {
     .footer {
         justify-content: center;
