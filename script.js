@@ -22,19 +22,19 @@ function handleShowAll() {
 }
 
 const faqItems = document.querySelectorAll(".faq-container-list-dropdown");
-console.log(faqItems);
 
 faqItems.forEach((item) => {
     const question = item.querySelector(".faq-container-list");
     const answer = item.querySelector(".faq-answer");
+    const arrow = item.querySelector(".faq-click-dropdown");
 
     question.addEventListener("click", () => {
         if (answer.style.display === "block") {
             answer.style.display = "none";
-            document.querySelector(".faq-click-dropdown").style.rotate = "0deg";
+            arrow.style.rotate = "0deg";
         } else {
             answer.style.display = "block";
-            document.querySelector(".faq-click-dropdown").style.rotate = "180deg";
+            arrow.style.rotate = "180deg";
         }
     });
 });

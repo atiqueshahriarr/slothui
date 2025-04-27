@@ -78,17 +78,8 @@
     line-height: 29px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-}
-
 .logo img {
-    height: 40px;
+    height: 32px;
 }
 
 .header-container {
@@ -452,6 +443,7 @@
 
 .faq-container-list img {
     width: 24px;
+    cursor: pointer;
 }
 
 .faq-container-list h5 {
@@ -559,6 +551,9 @@
     border-top: 1px solid #cbd5e1;
     margin-top: 32px;
 }
+.footer-bottom div:nth-child(1) {
+    flex: 1;
+}
 
 .footer-bottom div:nth-child(2) img {
     width: 24px;
@@ -568,10 +563,16 @@
     rotate: -180deg;
 }
 
+.footer-bottom div:nth-child(3) {
+    flex: 1;
+}
+
 .footer-bottom div:nth-child(3) p {
     font-size: 14px;
     font-weight: 500;
     color: #94a3b8;
+    flex: 1;
+    text-align: right;
 }
 
 @media (max-width: 767px) {
