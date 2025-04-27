@@ -34,7 +34,7 @@
                 </div>
 
                 <!-- Navbar -->
-                <nav>
+                <nav class="nav-items">
                     <ul>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
@@ -46,6 +46,29 @@
                 <div class="buttons">
                     <button class="signup">Sign Up</button>
                     <button class="login">Log In</button>
+                </div>
+
+                <div class="nav-dropdown">
+                    <button
+                        class="nav-dropdown-button"
+                        onclick="handleMenuBar()">
+                        <img
+                            src="images/Menu.png"
+                            alt="" />
+                    </button>
+                </div>
+
+                <div
+                    class="nav-dropdown-menu"
+                    id="nav-dropdown-menu-show">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -226,7 +249,7 @@
                             <p>Donec massa sapien faucibus et molestie ac feugiat sed. Congue mauris rhoncus aenean vel elit scelerisque.</p>
                         </div>
                     </div>
-                    
+
                     <div class="procrastinators-contents-right">
                         <div>
                             <img
