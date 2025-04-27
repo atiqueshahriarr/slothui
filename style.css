@@ -472,7 +472,6 @@
     border-bottom: none;
 }
 
-
 .faq-container-list-dropdown {
     border-bottom: 1px solid #cbd5e1;
 }
@@ -491,7 +490,7 @@
 .download-container {
     display: grid;
     align-items: center;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 96px;
 }
 
@@ -556,7 +555,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 32px;
+    padding: 32px 20px;
     border-top: 1px solid #cbd5e1;
     margin-top: 32px;
 }
@@ -776,16 +775,33 @@
         gap: 12px;
     }
 }
-/* 
+
 @media (min-width: 768px) and (max-width: 1023px) {
-    .footer {
-        justify-content: center;
-        gap: 30px;
+    .feature-items {
+        grid-template-columns: auto auto;
+    }
+
+    .testimonial-container-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .location-container-cards {
+        grid-template-columns: auto auto;
+    }
+
+    .download-container-images img {
+        width: 80%;
+    }
+
+    .download-container-images img:nth-child(2) {
+        position: absolute;
+        left: 86%;
+        top: -100px;
+    }
+
+    .footer-top-lists {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 0 20px;
     }
 }
-
-@media (min-width: 1024px) {
-    .footer {
-        justify-content: space-between;
-    }
-} */
