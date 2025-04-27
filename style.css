@@ -560,7 +560,7 @@
     margin-top: 32px;
 }
 
-.footer-bottom a:nth-child(2) img {
+.footer-bottom div:nth-child(2) img {
     width: 24px;
     padding: 12px;
     border-radius: 1234px;
