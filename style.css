@@ -389,6 +389,15 @@
     color: #475569;
 }
 
+.testimonial-container button {
+    display: none;
+    border: 1px solid #4f46e5;
+    background-color: #4f46e5;
+    width: 100%;
+    color: white;
+    margin: 32px 20px 0px 20px;
+}
+
 .location-container {
     padding: 64px 0;
 }
@@ -452,18 +461,17 @@
     flex-grow: 1;
 }
 
-.faq-container-list p {
+.faq-answer {
+    display: none;
     font-size: 16px;
     color: #64748b;
     line-height: 1.6;
 }
+
 .faq-container-list-dropdown .faq-container-list {
     border-bottom: none;
 }
 
-.faq-container-list-dropdown .faq-container-list img:nth-child(3) {
-    rotate: 180deg;
-}
 
 .faq-container-list-dropdown {
     border-bottom: 1px solid #cbd5e1;
@@ -581,7 +589,7 @@
     }
 
     .header-container .nav-items,
-    .buttons {
+    .header-container .buttons {
         display: none;
     }
 
@@ -604,7 +612,7 @@
     .nav-dropdown-menu {
         position: absolute;
         background-color: #e0e7ff;
-padding: 24px 0;
+        padding: 24px 0;
         width: 100%;
         left: 0;
         top: 72px;
@@ -712,6 +720,10 @@ padding: 24px 0;
 
     .testimonial-container-cards .testimonial-container-card:nth-child(n + 5) {
         display: none;
+    }
+
+    .testimonial-container button {
+        display: block;
     }
 
     .location-container-cards {

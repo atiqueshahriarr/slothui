@@ -3,6 +3,38 @@ function handleMenuBar() {
     console.log(element);
 
     if (element) {
-        console.log(element.classList.toggle("nav-dropdown"));
+        element.classList.toggle("nav-dropdown");
     }
 }
+
+function handleShowAll() {
+    const container = document.getElementById("testimonial-container-cardsId");
+
+    const hiddenCards = container.querySelectorAll(".testimonial-container-card:nth-child(n + 5)");
+
+    hiddenCards.forEach((card) => {
+        card.style.display = "block";
+        const btn = document.getElementById("testimonial-container-load-buttonId");
+        btn.style.display = "none";
+    });
+
+    console.log(hiddenCards);
+}
+
+const faqItems = document.querySelectorAll(".faq-container-list-dropdown");
+console.log(faqItems);
+
+faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-container-list");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            document.querySelector(".faq-click-dropdown").style.rotate = "0deg";
+        } else {
+            answer.style.display = "block";
+            document.querySelector(".faq-click-dropdown").style.rotate = "180deg";
+        }
+    });
+});
