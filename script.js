@@ -7,6 +7,16 @@ function handleMenuBar() {
     }
 }
 
+const cards = document.querySelectorAll(".procrastinators-contents-list");
+cards[0].classList.add("active");
+
+cards.forEach((card) => {
+    card.addEventListener("click", () => {
+        cards.forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+    });
+});
+
 function handleShowAll() {
     const container = document.getElementById("testimonial-container-cardsId");
 
