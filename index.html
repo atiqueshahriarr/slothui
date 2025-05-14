@@ -23,51 +23,53 @@
 
     <body>
         <!-- Header -->
-        <header class="container">
-            <div class="header-container">
-                <!-- Logo -->
-                <div class="logo">
-                    <img
-                        src="images/Logo.png"
-                        alt="" />
-                </div>
-
-                <!-- Navbar -->
-                <nav class="nav-items">
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                    </ul>
-                </nav>
-
-                <div class="buttons">
-                    <button class="signup">Sign Up</button>
-                    <button class="login">Log In</button>
-                </div>
-
-                <div class="nav-dropdown">
-                    <button
-                        class="nav-dropdown-button"
-                        onclick="handleMenuBar()">
+        <header class="shadow-header">
+            <div class="container">
+                <div class="header-container">
+                    <!-- Logo -->
+                    <div class="logo">
                         <img
-                            src="images/Menu.png"
+                            src="images/Logo.png"
                             alt="" />
-                    </button>
-                </div>
+                    </div>
 
-                <div
-                    class="nav-dropdown-menu"
-                    id="nav-dropdown-menu-show">
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#">Sign Up</a></li>
-                        <li><a href="#">Log In</a></li>
-                    </ul>
+                    <!-- Navbar -->
+                    <nav class="nav-items">
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="buttons">
+                        <button class="signup">Sign Up</button>
+                        <button class="login">Log In</button>
+                    </div>
+
+                    <div class="nav-dropdown">
+                        <button
+                            class="nav-dropdown-button"
+                            onclick="handleMenuBar()">
+                            <img
+                                src="images/Menu.png"
+                                alt="" />
+                        </button>
+                    </div>
+
+                    <div
+                        class="nav-dropdown-menu"
+                        id="nav-dropdown-menu-show">
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -211,15 +213,15 @@
                 </div>
                 <div class="work-cards">
                     <div class="work-card">
-                        <h1>420%</h1>
+                        <h1><span id="data-efficiency-data">0</span>%</h1>
                         <p>Data Efficiency</p>
                     </div>
                     <div class="work-card work-card-border">
-                        <h1>708+</h1>
+                        <h1><span id="conversion-rate-data">0</span>+</h1>
                         <p>Conversion Rate</p>
                     </div>
                     <div class="work-card">
-                        <h1>1.82M</h1>
+                        <h1><span id="llm-scale-data">0</span>M</h1>
                         <p>AI LLM Scale</p>
                     </div>
                 </div>

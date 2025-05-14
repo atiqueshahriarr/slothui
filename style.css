@@ -82,6 +82,16 @@
     height: 32px;
 }
 
+.shadow-header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0px 1px 12px #94a3b8;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -101,6 +111,11 @@
     text-decoration: none;
     color: #475569;
     font-weight: 700;
+}
+
+.header-container nav ul a:hover {
+    color: #4f46e5;
+    border-bottom: 2px solid #4f46e5;
 }
 
 .header-container .buttons button:first-child {
@@ -129,6 +144,12 @@
 
 .banner-container .section-title {
     font-size: 60px;
+    animation: zoomInOut 2s;
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(0.5);
+    }
 }
 
 .banner-container .download-buttons {
@@ -184,6 +205,7 @@
 .company-container img {
     max-width: 144px;
 }
+
 
 .feature-container {
     padding: 96px 0;
