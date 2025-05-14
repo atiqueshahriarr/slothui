@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -114,7 +115,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 24px 0;
 }
 
 .header-container nav ul {
@@ -169,7 +170,7 @@
 
 .banner-container {
     background-image: linear-gradient(to bottom, white 0%, white 30%, #4e46e58a 100%);
-    padding: 96px 0px;
+    padding: 128px 0px 96px 0px;
 }
 
 .banner-container .section-title {
@@ -313,6 +314,8 @@
     color: #4f46e5;
     font-size: 60px;
     font-weight: 700;
+    min-width: 190px;
+    text-align: center;
 }
 
 .work-card p {
@@ -345,7 +348,6 @@
 
 .procrastinators-contents-list:hover {
     transform: translateX(10px);
-
 }
 
 .procrastinators-contents-list.active {
@@ -399,8 +401,7 @@
 }
 
 .testimonial-container-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    column-count: 3;
     gap: 32px;
     padding-top: 64px;
 }
@@ -408,16 +409,19 @@
 .testimonial-container-card {
     border: 1px solid #e2e8f0;
     padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    display: inline-block;
+    width: 100%;
     border-radius: 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
-
 .testimonial-container-card:hover {
     border: 1px solid #4f46e5;
-    cursor: pointer;
-    transition: all 1s ease;
+}
+
+.testimonial-container-card p {
+    margin: 24px 0 24px 0;
 }
 
 .testimonial-rating img {
@@ -452,6 +456,7 @@
 .testimonial-container .avatar p {
     font-size: 16px;
     color: #475569;
+    margin: 0;
 }
 
 .testimonial-container button {
@@ -572,7 +577,6 @@
     cursor: pointer;
 }
 .download-container .buttons button:first-child:hover {
-
     border: 2px solid #4f46e5;
 }
 
@@ -647,15 +651,14 @@
 }
 
 .footer-bottom div:nth-child(2) img {
-    width: 24px;
-    padding: 12px;
+    width: 48px;
+    padding: 10px;
     border-radius: 1234px;
     border: 1px solid #cbd5e1;
     rotate: -180deg;
 }
 .footer-bottom div:nth-child(2) img:hover {
     border: 2px solid #cbd5e1;
-
 }
 
 .footer-bottom div:nth-child(3) {
@@ -809,7 +812,7 @@
     }
 
     .testimonial-container-cards {
-        grid-template-columns: 1fr;
+        column-count: 1;
         gap: 16px;
     }
 
@@ -878,7 +881,7 @@
     }
 
     .testimonial-container-cards {
-        grid-template-columns: 1fr 1fr;
+        column-count: 2;
     }
 
     .location-container-cards {
@@ -901,3 +904,13 @@
         padding: 0 20px;
     }
 }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.fade-in.visible {
+    opacity: 1;
+}
+
+
