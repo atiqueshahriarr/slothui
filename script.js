@@ -7,16 +7,6 @@ function handleMenuBar() {
     }
 }
 
-const cards = document.querySelectorAll(".procrastinators-contents-list");
-cards[0].classList.add("active");
-
-cards.forEach((card) => {
-    card.addEventListener("click", () => {
-        cards.forEach((c) => c.classList.remove("active"));
-        card.classList.add("active");
-    });
-});
-
 function handleShowAll() {
     const container = document.getElementById("testimonial-container-cardsId");
 
@@ -46,6 +36,16 @@ faqItems.forEach((item) => {
             answer.style.display = "block";
             arrow.style.rotate = "180deg";
         }
+    });
+});
+
+const cards = document.querySelectorAll(".procrastinators-contents-list");
+cards[0].classList.add("active");
+
+cards.forEach((card) => {
+    card.addEventListener("click", () => {
+        cards.forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
     });
 });
 
@@ -138,3 +138,26 @@ window.addEventListener("scroll", () => {
         startLLMCounter();
     }
 });
+
+const titles = document.querySelectorAll(".section-title");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.5,
+    }
+);
+
+titles.forEach((title) => {
+    observer.observe(title);
+});
+
+const title = document.querySelector(".section-title");
+if (title) observer.observe(title);

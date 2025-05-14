@@ -69,6 +69,24 @@
     color: #1e293b;
     font-weight: 800;
     font-size: 36px;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.section-title.animate {
+    animation: zoomInOut 1s ease forwards;
+    opacity: 1;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .section-subtitle {
@@ -123,10 +141,22 @@
     border: 1px solid #cbd5e1;
 }
 
+.header-container .buttons button:first-child:hover {
+    border: 1px solid #4f46e5;
+    cursor: pointer;
+    color: #4f46e5;
+    cursor: pointer;
+}
+
 .header-container .buttons button:nth-child(2) {
     border: 1px solid #4f46e5;
     background-color: #4f46e5;
     color: white;
+    cursor: pointer;
+}
+.header-container .buttons button:nth-child(2):hover {
+    border: 1px solid #cbd5e1;
+    background-color: #4e46e5fb;
 }
 
 .nav-dropdown {
@@ -144,12 +174,6 @@
 
 .banner-container .section-title {
     font-size: 60px;
-    animation: zoomInOut 2s;
-}
-@keyframes zoomInOut {
-    0% {
-        transform: scale(0.5);
-    }
 }
 
 .banner-container .download-buttons {
@@ -162,10 +186,20 @@
 
 .banner-container .download-buttons img:first-child {
     width: 132px;
+    cursor: pointer;
+    transition: width 0.5s ease;
 }
 
 .banner-container .download-buttons > img:nth-child(2) {
     width: 148.5px;
+    cursor: pointer;
+    transition: width 0.5s ease;
+}
+.banner-container .download-buttons img:first-child:hover {
+    width: 150px;
+}
+.banner-container .download-buttons img:nth-child(2):hover {
+    width: 166.5px;
 }
 
 .banner-images {
@@ -223,6 +257,12 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-item:hover {
+    transform: translateY(-6px);
 }
 
 .feature-container .feature-item img {
@@ -300,6 +340,12 @@
     padding: 24px 0 24px 20px;
     border-left: 4px solid #e0e7ff;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.procrastinators-contents-list:hover {
+    transform: translateX(10px);
+
 }
 
 .procrastinators-contents-list.active {
@@ -368,6 +414,12 @@
     border-radius: 24px;
 }
 
+.testimonial-container-card:hover {
+    border: 1px solid #4f46e5;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
 .testimonial-rating img {
     width: 24px;
 }
@@ -428,6 +480,12 @@
     border-radius: 24px;
 }
 
+.location-container-card:hover {
+    border: 1px solid #4f46e5;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
 .location-container-card img {
     width: 24px;
     padding-bottom: 24px;
@@ -461,11 +519,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
 .faq-container-list img {
     width: 24px;
-    cursor: pointer;
 }
 
 .faq-container-list h5 {
@@ -511,12 +569,23 @@
 .download-container .buttons button:first-child {
     color: #4f46e5;
     border: 1px solid #4f46e5;
+    cursor: pointer;
+}
+.download-container .buttons button:first-child:hover {
+
+    border: 2px solid #4f46e5;
 }
 
 .download-container .buttons button:nth-child(2) {
     border: 1px solid #4f46e5;
     background-color: #4f46e5;
     color: white;
+    cursor: pointer;
+}
+
+.download-container .buttons button:nth-child(2):hover {
+    border: 1px solid #94a3b8;
+    background-color: #4e46e5fa;
 }
 
 .download-container-images {
@@ -583,6 +652,10 @@
     border-radius: 1234px;
     border: 1px solid #cbd5e1;
     rotate: -180deg;
+}
+.footer-bottom div:nth-child(2) img:hover {
+    border: 2px solid #cbd5e1;
+
 }
 
 .footer-bottom div:nth-child(3) {
