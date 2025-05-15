@@ -91,7 +91,7 @@ function startConversionCounter() {
 
 function startLLMCounter() {
     const llmElement = document.getElementById("llm-scale-data");
-    const targetForLLM = 1.8;
+    const targetForLLM = 1.82;
     const duration = 4000;
     const frameRate = 1000 / 60;
     const totalFrames = duration / frameRate;
@@ -105,7 +105,7 @@ function startLLMCounter() {
             countLLM = targetForLLM;
             clearInterval(intervalForLLM);
         }
-        llmElement.textContent = countLLM.toFixed(1);
+        llmElement.textContent = countLLM.toFixed(2);
     }, frameRate);
 }
 
